@@ -85,7 +85,7 @@ install_mbedtls(){
         if [ ! -f mbedtls-$MBEDTLS_VER-gpl.tgz ];then
             wget https://sources.openwrt.org/mbedtls-2.16.5-gpl.tgz
         fi
-        tar xf mbedtls-$MBEDTLS_VER-gpl.tgz
+        tar xf mbedtls-2.16.5-gpl.tgz
         pushd mbedtls-$MBEDTLS_VER
         make SHARED=1 CFLAGS=-fPIC
         make DESTDIR=/usr install
