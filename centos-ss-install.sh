@@ -83,7 +83,7 @@ install_mbedtls(){
         echo -e "\033[1;32mMbedTLS already installed, skip.\033[0m"
     else
         if [ ! -f mbedtls-$MBEDTLS_VER-gpl.tgz ];then
-            wget https://sources.openwrt.org/mbedtls-2.16.5-gpl.tgz
+            wget https://tls.mbed.org/download/mbedtls-$MBEDTLS_VER-gpl.tgz
         fi
         tar xf mbedtls-$MBEDTLS_VER-gpl.tgz
         pushd mbedtls-$MBEDTLS_VER
